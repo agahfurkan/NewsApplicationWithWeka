@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/colorPrimary">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/news_detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    tools:src="@drawable/no_image_icon" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mdimen">
+
+                    <ImageView
+                        android:id="@+id/news_detail_dateicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/ldimen"
+                        android:src="@drawable/ic_date_range_white_24dp"
+                        android:tint="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/news_detail_publishDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/sdimen"
+                        android:layout_marginEnd="@dimen/ldimen"
+                        android:layout_toEndOf="@id/news_detail_dateicon"
+                        android:textColor="@color/colorAccent"
+                        tools:text="2019-03-14" />
+
+                    <ImageView
+                        android:id="@+id/news_detail_sourceicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/ldimen"
+                        android:layout_toStartOf="@id/news_detail_source"
+                        android:src="@drawable/ic_person_white_24dp"
+                        android:tint="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/news_detail_source"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/sdimen"
+                        android:layout_marginEnd="@dimen/ldimen"
+                        android:textColor="@color/colorAccent"
+                        tools:text="google.com" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/ldimen">
+
+                    <ImageView
+                        android:id="@+id/news_detail_categoryIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_receipt_white_24dp"
+                        android:tint="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/news_detail_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/news_detail_categoryIcon"
+                        android:textColor="@color/colorAccent"
+                        tools:text="TECH" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mdimen"
+                android:layout_marginTop="@dimen/mdimen"
+                android:layout_marginEnd="@dimen/mdimen"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="ISTRAŽIVANJE: Najbolji lek za prehladu je san | (Vesti - 17.02.2019) - Mojnovisad.com" />
+
+            <TextView
+                android:id="@+id/news_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mdimen"
+                android:layout_marginTop="@dimen/mdimen"
+                android:layout_marginEnd="@dimen/mdimen"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                tools:text="Osteoarthritis patients who are considering a hip or knee replacement surgery will now have a better idea of long-term success rates, thanks to a large study involving thousands of global cases, including Australia. Published in The Lancet on Saturday, the st… [+3341 chars]" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

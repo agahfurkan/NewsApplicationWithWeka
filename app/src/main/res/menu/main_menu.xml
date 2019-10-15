@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search_item"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/menu_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/menu_books_item"
+        android:icon="@drawable/ic_menu_books"
+        android:title="@string/menu_recommended_books"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/main_menu"
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        android:title="@string/menu_more_options"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_recommended_news_item"
+                android:title="@string/menu_recommended_news"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_categorySelect_item"
+                android:title="@string/menu_selected_categories"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_settings_item"
+                android:title="@string/menu_settings"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_logout_item"
+                android:title="@string/menu_logout"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

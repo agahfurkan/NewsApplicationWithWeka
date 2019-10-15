@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">News Application With Weka</string>
+    <string name="permission_toast">Uygulamanın düzgün çalışabilmesi için izinleri kabul etmelisiniz.</string>
+    <string name="dummyTitle">How to install Android Q beta on your phone — a step by step guide</string>
+    <string name="dummyDesc">Android Q Beta 1 is here and supports all Pixel devices ever released. Heres how to get the update!</string>
+    <string name="dummyContent">Android Q represents the next big evolution of Android, and now the first beta has arrived! While previous comments from Google suggested more devices would get in on the Beta , it looks like Beta 1 remains a Pixel only affair. If history is any indication … [+6410 chars]</string>
+    <string name="menu_recommended_news">Recommended News</string>
+    <string name="menu_selected_categories">Selected Categories</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_recommended_books">Recommended Books</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_more_options">More Options</string>
+    <string name="not_interested">Not Interested</string>
+    <string name="share">Share</string>
+    <string name="model_loading">Model Loading</string>
+    <string name="model_not_available">Model Not Available</string>
+</resources>

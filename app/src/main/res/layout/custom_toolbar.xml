@@ -1,0 +1,19 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:collapseIcon="@drawable/ic_arrow_back_white_24dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/main_searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:queryHint="Search Your Category"
+        app:searchIcon="@null" />
+</androidx.appcompat.widget.Toolbar>

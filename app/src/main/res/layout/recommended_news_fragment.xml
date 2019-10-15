@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/empty_data_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_arrow_pointing_down_a_container" />
+
+    <TextView
+        android:id="@+id/empty_data_text"
+        android:textColor="#FFFFFF"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_data_image"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Nothing To Show"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recommended_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
