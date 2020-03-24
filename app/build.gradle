@@ -1,6 +1,11 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+def newsApiKey = properties.getProperty('newsApiKey')
+def firebaseClientKey = properties.getProperty('firebaseClientKey')
+
 android {
     compileSdkVersion 29
     defaultConfig {
