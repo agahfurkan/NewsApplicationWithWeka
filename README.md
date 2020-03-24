@@ -10,7 +10,7 @@ We are using Database and Authentication features of firebase. Before using repo
 - Go to the Firebase Console and navigate to your project:
 - Select the Auth panel and then click the Sign In Method tab.
 - Click Google and turn on the Enable switch, then click Save.
-- Click edit icon and get Web client id and paste it to gradle.properties file using "firebaseClientKey" key.
+- Click edit icon and get Web client id and paste it to local.properties file using "firebaseClientKey" key.
 ###### Firebase Database
 - Select the Database panel and then click the Rules Method tab.
 ```javascript
@@ -28,6 +28,6 @@ We are using Database and Authentication features of firebase. Before using repo
 - Use above code as your rule.
 ###### News Api
 - https://newsapi.org/docs api used for getting all news.
-- Get your API-KEY and paste it to gradle.properties file using "newsApiKey" key.
+- Get your API-KEY and paste it to local.properties file using "newsApiKey" key.
 ## Result
 <img src="app/src/Screen.png"/>
